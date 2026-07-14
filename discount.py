@@ -20,6 +20,8 @@ def calculate_discounted_price(price, customer_type, coupon_code=None, is_holida
     if is_holiday:
         price = price * 0.95
     return round(price, 2)
+
+
 SUPPORTED_COUPON_CODES = {
     "SAVE10": "10% off for all customers",
     "SAVE20": "20% off exclusively for premium customers",
